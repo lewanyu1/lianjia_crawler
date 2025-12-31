@@ -1,0 +1,13 @@
+# --- 核心爬虫工具 ---
+selenium>=4.0.0        # 浏览器自动化工具，用于搞定链家反爬和动态加载
+webdriver-manager      # 神器！自动下载和管理浏览器驱动(ChromeDriver)，免去手动配置环境变量的麻烦
+
+# --- API 调用工具 ---
+requests>=2.25.0       # 必选：用于发送 HTTP 请求调用"百度地图 API" (用 Selenium 调 API 会很慢且怪异)
+
+# --- 数据解析工具 ---
+beautifulsoup4>=4.9.0  # 推荐：虽然 Selenium 能查找元素，但配合 BS4 解析 driver.page_source 速度更快，代码更简洁
+lxml>=4.6.0            # BS4 的高效解析器
+
+# --- 可选 (加分项) ---
+# pandas>=1.2.0        # 如果你想做数据统计或分析，可以安装这个
