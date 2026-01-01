@@ -5,13 +5,17 @@ import time
 import random
 import map_api
 import  settings
+from selenium.webdriver.chrome.service import Service
 def init_driver():
     options = webdriver.ChromeOptions()
-    # 关键：禁用自动化标志，防止被链家识别为爬虫
     options.add_argument("--disable-blink-features=AutomationControlled")
     options.add_experimental_option("excludeSwitches", ["enable-automation"])
-
-    driver = webdriver.Chrome(options=options)
+    options.add_argument('--ignore-certificate-errors')
+    if hasattr(settings, 'chrome_address') and settings.chrome_address:
+        options.binary_location = settings.chrome_address
+    driver_path=settings.driver_path
+    service = Service(executable_path=driver_path)
+    driver = webdriver.Chrome(service=service, options=options)
     return driver
 #爬取单页逻辑
 def parse_page(driver, url):

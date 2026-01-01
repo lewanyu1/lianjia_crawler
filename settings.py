@@ -30,3 +30,7 @@ HEADERS = {
 # 方便你修改城市，或者修改起止页码
 CITY_URL = "https://sz.lianjia.com/ershoufang/" # 武汉链家
 MAX_PAGES = 10  # 比如只爬10页，不用写死在循环里
+
+#4.谷歌浏览器的地址
+chrome_address='/Users/rulerwxe/routine/Google Chrome.app/Contents/MacOS/Google Chrome'
+driver_path='/Users/rulerwxe/programming/temporory/ETL/lianjia_crawler/chromedriver-mac-arm64/chromedriver'
