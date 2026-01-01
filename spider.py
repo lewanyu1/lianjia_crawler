@@ -21,6 +21,7 @@ def init_driver():
 def parse_page(driver, url):
     # data_list = []
     driver.get(url)
+    input()
     time.sleep(random.uniform(3, 5))#模拟看房
     # 拿到源码
     html = driver.page_source
