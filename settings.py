@@ -28,8 +28,9 @@ HEADERS = {
 
 # 3. 基础 URL 配置
 # 方便你修改城市，或者修改起止页码
-CITY_URL = "https://sz.lianjia.com/ershoufang/" # 武汉链家
+CITY_URL = "https://sz.lianjia.com/ershoufang/"
 MAX_PAGES = 10  # 比如只爬10页，不用写死在循环里
+CITY="深圳"
 
 #4.谷歌浏览器的地址
 chrome_address='/Users/rulerwxe/routine/Google Chrome.app/Contents/MacOS/Google Chrome'
