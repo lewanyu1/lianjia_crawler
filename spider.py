@@ -19,7 +19,7 @@ def init_driver():
     return driver
 #爬取单页逻辑
 def parse_page(driver, url):
-    data_list = []
+    # data_list = []
     driver.get(url)
     time.sleep(random.uniform(3, 5))#模拟看房
     # 拿到源码
@@ -83,8 +83,8 @@ def parse_page(driver, url):
                 "标题": title
             }
             print(house_data)
-
-            data_list.append(house_data)
+            yield house_data
+            # data_list.append(house_data)
         except Exception as e:
             print(f"⚠️ 解析单条房源出错: {e}")
             continue

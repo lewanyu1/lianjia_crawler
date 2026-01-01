@@ -35,3 +35,6 @@ CITY="深圳"
 #4.谷歌浏览器的地址
 chrome_address='/Users/rulerwxe/routine/Google Chrome.app/Contents/MacOS/Google Chrome'
 driver_path='/Users/rulerwxe/programming/temporory/ETL/lianjia_crawler/chromedriver-mac-arm64/chromedriver'
+
+#5.配置爬取完后存储的地址
+SAVE_PATH="/Users/rulerwxe/programming/temporory/ETL/lianjia_crawler/output"
