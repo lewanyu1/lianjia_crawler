@@ -220,9 +220,9 @@ output/
 *.txt
 
 # 4. 浏览器驱动 (二进制文件不应该上传，且每个人路径不一样)
+chromedriver-mac-arm64/
 chromedriver
-geckodriver
 
-# 5. (可选) 包含敏感密钥的配置
-# 如果你的 settings.py 里有百度地图 AK，建议不要上传，或者上传前把 AK 删掉
-# settings.py
+#5.忽略真实的配置文件
+settings.py
+
