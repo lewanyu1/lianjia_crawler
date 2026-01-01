@@ -82,7 +82,7 @@ def parse_page(driver, url):
                 "所在区域": region,
                 "标题": title
             }
-            print(house_data)
+            # print(house_data)
             yield house_data
             # data_list.append(house_data)
         except Exception as e:
