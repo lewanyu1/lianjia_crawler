@@ -2,7 +2,7 @@
 
 # 1. 百度地图 API 秘钥 (去百度地图开放平台申请后填在这里)
 # 这是给 map_api.py 用的
-BAIDU_AK = "Hz4lr486lcmR0R7W0a6fpQ2OvUlRmW1d"
+# BAIDU_AK = "Hz4lr486lcmR0R7W0a6fpQ2OvUlRmW1d"
 
 # 2. 爬虫伪装头 (这是给 spider.py 用的)
 # 建议先把 Cookie 留空，等会儿如果跑不通再填
@@ -29,7 +29,7 @@ HEADERS = {
 # 3. 基础 URL 配置
 # 方便你修改城市，或者修改起止页码
 CITY_URL = "https://sz.lianjia.com/ershoufang/"
-MAX_PAGES = 10  # 比如只爬10页，不用写死在循环里
+MAX_PAGES = 1  # 比如只爬10页，不用写死在循环里
 CITY="深圳"
 
 #4.谷歌浏览器的地址

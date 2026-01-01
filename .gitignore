@@ -205,3 +205,24 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# --- 自定义补充配置 ---
+
+# 1. Mac 系统垃圾文件 (你是Mac用户，这个必加，否则满屏都是.DS_Store)
+.DS_Store
+
+# 2. PyCharm 项目配置 (避免把你的本地窗口布局上传)
+.idea/
+
+# 3. 爬虫抓取的数据结果 (代码是代码，数据是数据，不应混在一起上传)
+output/
+*.csv
+*.txt
+
+# 4. 浏览器驱动 (二进制文件不应该上传，且每个人路径不一样)
+chromedriver
+geckodriver
+
+# 5. (可选) 包含敏感密钥的配置
+# 如果你的 settings.py 里有百度地图 AK，建议不要上传，或者上传前把 AK 删掉
+# settings.py
